@@ -1,9 +1,16 @@
-document.getElementById('btn-login').addEventListener('click', function(event){
-    event.preventDefault();
-  const phoneNumber = document.getElementById('phone-number').value;
+document.getElementById('btn-login')
+    .addEventListener('click', function (event) {
+        event.preventDefault();
+        const phoneNumber = document.getElementById('phone-number').value;
+        const pinNumber = document.getElementById('pin-number').value;
+        if (phoneNumber === '01776637858' && pinNumber === '1234') {
+            console.log('you are logged in');
+            window.location.href = "./home.html"
 
-  const password = document.getElementById('password').value;
-  console.log(password);
-  
-    
-})
+        } else {
+            alert('phone number or pin wrong');
+
+        }
+
+
+    });
