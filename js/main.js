@@ -1,5 +1,5 @@
-document.getElementById('btn-login')
-    .addEventListener('click', function (event) {
+// account check and go to home page
+document.getElementById('btn-login').addEventListener('click', function (event) {
         event.preventDefault();
         const phoneNumber = document.getElementById('phone-number').value;
         const pinNumber = document.getElementById('pin-number').value;
@@ -12,5 +12,7 @@ document.getElementById('btn-login')
 
         }
 
-
     });
+
+
+    
